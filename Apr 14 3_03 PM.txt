@@ -1,0 +1,38 @@
+
+ //output Jasmine%20Ann%20Jones
+ 
+  //input Jasmine Ann Jones
+  Jasmine%20Ann Jones
+ function turnStrings(sentence)
+ {
+ 
+ if(sentence === "")
+ return "please enter in a string"
+ 
+ let firstSpace = sentence.indexOf(" ")
+ 
+ if(firstSpace === -1)
+ return sentence
+ 
+ let firstWord = sentence.substring(0, firstSpace)
+ let updatedWord = firstWord + "%20";
+ 
+ let restofWords = sentence.substring( firstspace + 1)
+ 
+ return turnString(updatedWord + restofWords)
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
